@@ -50,6 +50,10 @@ class MetalController < ActionController::Metal
     render "metal/index"
   end
 
+  def google_global
+    render "metal/index"
+  end
+
   def google_analytics
     tracker do |t|
       t.google_analytics :ecommerce, { type: 'addTransaction', id: 1234, affiliation: 'Acme Clothing', revenue: 11.99, shipping: 5, tax: 1.29 }
